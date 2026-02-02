@@ -27,47 +27,17 @@ const storage = {
       console.error('Storage remove error:', error);
       return false;
     }
+  },
+
+  clear() {
+    try {
+      localStorage.clear();
+      return true;
+    } catch (error) {
+      console.error('Storage clear error:', error);
+      return false;
+    }
   }
 };
 
 export default storage;
-```
-
-## 📄 **src/App.js**
-
-This is the working version from the preview. **Copy the code from the artifact named `carenest-app`** on the right side - it's the complete working App.js with access code protection!
-
----
-
-## 📄 **For the Component Files:**
-
-The individual component files are in these artifacts (scroll up in our conversation):
-- `carenest-homescreen` 
-- `carenest-profilescreen`
-- `carenest-profileform`
-- `carenest-dailylog`
-- `carenest-medication`
-- `carenest-appointment`
-- `carenest-emergency`
-- `carenest-summary`
-- `carenest-settings`
-- `carenest-privacy`
-
-Each artifact has the complete code ready to copy!
-
----
-
-## 📄 **.gitignore**
-```
-node_modules/
-build/
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.vscode/
-.idea/
