@@ -17,26 +17,6 @@ const storage = {
       console.error('Storage set error:', error);
       return false;
     }
-  },
-
-  remove(key) {
-    try {
-      localStorage.removeItem(key);
-      return true;
-    } catch (error) {
-      console.error('Storage remove error:', error);
-      return false;
-    }
-  },
-
-  clear() {
-    try {
-      localStorage.clear();
-      return true;
-    } catch (error) {
-      console.error('Storage clear error:', error);
-      return false;
-    }
   }
 };
 
